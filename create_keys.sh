@@ -72,7 +72,7 @@ for usbpartition in /dev/disk/by-id/usb-*-part1; do
         umount \$usbdevice
     fi
 done
-/lib/cryptsetup/askpass "Insert USB key and press ENTER: "
+/lib/cryptsetup/askpass "Enter passphrase or insert USB key and press ENTER: "
 END
 chmod 755 /bin/luksunlockusb
 
